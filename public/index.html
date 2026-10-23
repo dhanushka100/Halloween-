@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Spooky Snap Contest 2026 – Win a $25 Gift Card</title>
+<meta name="description" content="Show us how you celebrate Halloween. Pets, costumes and decorations. Enter free and win a $25 gift card.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎃</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0a14;--card:#1a1326;--line:#2e2340;--text:#f4eefc;--mute:#b3a6c9;--or:#ff7a1a;--pu:#8b5cf6;--gr:#7CFC8A;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:radial-gradient(1200px 600px at 50% -10%,#2a1740 0,var(--bg) 60%) var(--bg);color:var(--text);font-family:Nunito,system-ui,sans-serif;line-height:1.6}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:Creepster,Impact,sans-serif;font-weight:400;letter-spacing:.04em;margin:0}
+a{color:var(--or)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+nav b{font-family:Creepster,Impact,sans-serif;font-size:1.5rem;letter-spacing:.05em}
+.btn{display:inline-block;background:var(--or);color:#1b0e00;font-weight:800;border:0;border-radius:999px;padding:14px 28px;font-size:1rem;cursor:pointer;text-decoration:none;font-family:inherit;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #ff7a1a55}
+.btn.ghost{background:transparent;color:var(--text);border:2px solid var(--line)}
+.hero{text-align:center;padding:48px 0 40px}
+.hero h1{font-size:clamp(2.8rem,9vw,5.5rem);line-height:1;color:var(--or);text-shadow:0 0 40px #ff7a1a66}
+.hero p{max-width:560px;margin:18px auto 26px;color:var(--mute);font-size:1.15rem}
+.pill{display:inline-block;background:#8b5cf622;border:1px solid #8b5cf666;color:#d6c6ff;padding:4px 14px;border-radius:999px;font-weight:700;font-size:.85rem;margin-bottom:16px}
+#count{display:flex;gap:12px;justify-content:center;margin:0 0 28px}
+#count div{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 8px;min-width:74px}
+#count b{display:block;font-size:2rem;line-height:1.1;color:var(--gr)}
+#count span{font-size:.75rem;color:var(--mute);text-transform:uppercase;letter-spacing:.08em}
+section{padding:44px 0}
+section>.wrap>h2{font-size:2.3rem;text-align:center;margin-bottom:8px;color:var(--or)}
+.sub{text-align:center;color:var(--mute);margin:0 auto 28px;max-width:560px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px}
+.card .em{font-size:2.6rem}
+.card h3{margin:6px 0 4px;font-size:1.2rem}
+.card p{margin:0;color:var(--mute)}
+.prize{color:var(--gr);font-weight:800}
+.steps .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--pu);font-weight:800;margin-bottom:8px}
+form{max-width:640px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;display:grid;gap:14px}
+label{font-weight:700;font-size:.92rem;display:grid;gap:6px}
+input[type=text],input[type=email],input[type=url],select,textarea{width:100%;background:#120c1c;color:var(--text);border:1px solid var(--line);border-radius:12px;padding:12px 14px;font:inherit}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--or);border-color:transparent}
+.chk{display:flex;gap:10px;align-items:flex-start;font-weight:400;font-size:.88rem;color:var(--mute)}
+.chk input{margin-top:5px;accent-color:var(--or)}
+.hp{position:absolute;left:-9999px}
+#msg{text-align:center;font-weight:700;min-height:1.4em}
+.tabs{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:20px}
+.tabs button{background:var(--card);color:var(--text);border:1px solid var(--line);border-radius:999px;padding:8px 18px;font:inherit;font-weight:700;cursor:pointer}
+.tabs button.on{background:var(--pu);border-color:var(--pu)}
+.entry img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;background:#120c1c}
+.entry h3{margin:10px 0 0;font-size:1.05rem}
+.entry small{color:var(--mute)}
+.entry .row{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.entry .btn{padding:8px 16px;font-size:.9rem}
+.empty{text-align:center;color:var(--mute);border:2px dashed var(--line);border-radius:18px;padding:36px 16px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+summary{font-weight:800;cursor:pointer}
+details p,details li{color:var(--mute);font-size:.95rem}
+footer{border-top:1px solid var(--line);padding:26px 0 40px;text-align:center;color:var(--mute);font-size:.85rem}
+#toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--pu);padding:12px 22px;border-radius:999px;font-weight:700;opacity:0;pointer-events:none;transition:opacity .25s;z-index:9}
+#toast.show{opacity:1}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>🎃 Spooky Snap</b><a class="btn ghost" href="#enter">Enter free</a></nav>
+
+<header class="hero">
+  <span class="pill">Free to enter · No purchase necessary · US residents 18+</span>
+  <h1>Show Us Your<br>Halloween!</h1>
+  <p>Share your best pet costume, costume or decoration. Get votes from friends and win a <b class="prize">$25 gift card</b> in each category.</p>
+  <div id="count" aria-label="Time left to enter"></div>
+  <a class="btn" href="#enter">Enter the contest 👻</a>
+</header>
+</div>
+
+<section><div class="wrap">
+  <h2>Pick Your Category</h2>
+  <p class="sub">One winner per category. Enter as many as you like.</p>
+  <div class="grid">
+    <div class="card"><div class="em">🐶</div><h3>Best Pet Costume</h3><p>Dogs, cats, bunnies, lizards. If it wears a costume, it counts.</p><p class="prize">$25 gift card</p></div>
+    <div class="card"><div class="em">🧛</div><h3>Best Costume</h3><p>Homemade or store-bought, solo or with a group.</p><p class="prize">$25 gift card</p></div>
+    <div class="card"><div class="em">🪦</div><h3>Best Decoration</h3><p>Pumpkin carving, front yard, haunted room, spooky treats.</p><p class="prize">$25 gift card</p></div>
+  </div>
+</div></section>
+
+<section class="steps"><div class="wrap">
+  <h2>How It Works</h2>
+  <p class="sub">It takes about one minute.</p>
+  <div class="grid">
+    <div class="card"><span class="n">1</span><h3>Post your photo or video</h3><p>Upload it to Instagram, TikTok, Facebook or Google Drive. Make sure the link is public.</p></div>
+    <div class="card"><span class="n">2</span><h3>Submit the link below</h3><p>We review every entry and add approved ones to the gallery.</p></div>
+    <div class="card"><span class="n">3</span><h3>Share and collect votes</h3><p>Send your gallery link to friends. Winners are announced on November 2.</p></div>
+  </div>
+</div></section>
+
+<section id="enter"><div class="wrap">
+  <h2>Enter the Contest</h2>
+  <p class="sub">Entries close October 31, 2026 at 11:59 PM ET.</p>
+  <form id="f" novalidate>
+    <label>Your name<input type="text" name="name" required maxlength="60" autocomplete="name"></label>
+    <label>Email (for winner notification only)<input type="email" name="email" required autocomplete="email"></label>
+    <label>Category
+      <select name="category" required>
+        <option value="">Choose one…</option>
+        <option>Best Pet Costume</option>
+        <option>Best Costume</option>
+        <option>Best Decoration</option>
+      </select>
+    </label>
+    <label>Upload a photo<input type="file" name="photofile" accept="image/*"></label>
+    <label>…or a link to your public video or post<input type="url" name="link" placeholder="https://www.tiktok.com/…"></label>
+    <label>Short caption (optional)<textarea name="caption" rows="2" maxlength="140"></textarea></label>
+    <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label class="chk"><input type="checkbox" name="eligible" required> I am 18 or older and a legal resident of the United States.</label>
+    <label class="chk"><input type="checkbox" name="rights" required> The photo or video is mine, nobody under 18 appears in it, and everyone shown agrees to it being displayed.</label>
+    <label class="chk"><input type="checkbox" name="rules" required> I have read and agree to the <a href="#rules">Official Rules</a>.</label>
+    <label class="chk"><input type="checkbox" name="news"> (Optional) Email me about future giveaways.</label>
+    <button class="btn" type="submit">Submit my entry 🎃</button>
+    <div id="msg" role="status"></div>
+  </form>
+</div></section>
+
+<section id="gallery"><div class="wrap">
+  <h2>The Gallery</h2>
+  <p class="sub">Approved entries appear here. Vote for your favourite, one vote per category.</p>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="list"></div>
+</div></section>
+
+<section id="rules"><div class="wrap">
+  <h2>Official Rules</h2>
+  <p class="sub">Please read before entering.</p>
+  <div style="max-width:760px;margin:0 auto">
+  <details open><summary>Eligibility and no purchase necessary</summary>
+    <p>NO PURCHASE OR PAYMENT IS NECESSARY TO ENTER OR WIN. A purchase will not improve your chances. Open to legal residents of the United States who are 18 or older at the time of entry. Void where prohibited by law. Employees of the sponsor and their family members may not enter.</p></details>
+  <details><summary>Entry period</summary>
+    <p>From October 22, 2026 to October 31, 2026, 11:59 PM Eastern Time. One entry per category per person. Voting stays open until November 1, 2026, 11:59 PM Eastern Time.</p></details>
+  <details><summary>Entries and content</summary>
+    <ul><li>Your entry must be your own original photo or video.</li>
+    <li>No one under 18 may appear in an entry.</li>
+    <li>No violent, sexual, hateful or illegal content. We may reject any entry.</li>
+    <li>By entering you allow the sponsor to display your entry and first name on this website and its social channels. You keep ownership of your content.</li></ul></details>
+  <details><summary>How winners are chosen</summary>
+    <p>In each category the approved entry with the most valid votes wins. Votes that appear automated or fraudulent are removed. Ties are decided by a panel appointed by the sponsor. Winners are announced on November 2, 2026.</p></details>
+  <details><summary>Prizes</summary>
+    <p>Three prizes: one $25 USD digital gift card per category. Prizes are delivered by email. A winner who does not reply within 48 hours may be replaced by the next entry. The sponsor is not responsible for taxes owed on a prize.</p></details>
+  <details><summary>Privacy</summary>
+    <p>We use your email only to contact winners and, if you tick the optional box, to send you news about future giveaways. We never sell your data. You can unsubscribe at any time.</p></details>
+  <details><summary>Sponsor</summary>
+    <p>[YOUR NAME OR COMPANY], [CITY, COUNTRY], [CONTACT EMAIL]. This contest is not sponsored, endorsed or administered by Instagram, TikTok, Facebook or Google.</p></details>
+  </div>
+</div></section>
+
+<footer><div class="wrap">© 2026 Spooky Snap · <a href="#rules">Official Rules</a> · <a href="#enter">Enter</a></div></footer>
+<div id="toast"></div>
+
+<script>
+// ===== SETTINGS =====
+var END = new Date("2026-11-01T03:59:00Z"); // Oct 31, 2026 11:59 PM EDT (must match ENTRY_END in server.js)
+var ENTRIES = [], MINE = {};
+// ================================
+
+function $(s){return document.querySelector(s)}
+function toast(t){var e=$("#toast");e.textContent=t;e.classList.add("show");setTimeout(function(){e.classList.remove("show")},2600)}
+
+function tick(){
+  var ms=END-new Date(), el=$("#count");
+  if(ms<=0){el.innerHTML='<div><b>👻</b><span>Entries closed</span></div>';return}
+  var d=Math.floor(ms/864e5),h=Math.floor(ms/36e5)%24,m=Math.floor(ms/6e4)%60,s=Math.floor(ms/1e3)%60;
+  el.innerHTML=[[d,"Days"],[h,"Hours"],[m,"Min"],[s,"Sec"]].map(function(x){return "<div><b>"+x[0]+"</b><span>"+x[1]+"</span></div>"}).join("");
+}
+tick();setInterval(tick,1000);
+
+// Shrinks the chosen photo to a ~1200px JPEG in the browser before sending
+function prep(f){return new Promise(function(res,rej){
+  var file=f.photofile.files[0];if(!file)return res("");
+  var img=new Image(),u=URL.createObjectURL(file);
+  img.onload=function(){var s=Math.min(1,1200/Math.max(img.width,img.height)),c=document.createElement("canvas");c.width=Math.round(img.width*s);c.height=Math.round(img.height*s);c.getContext("2d").drawImage(img,0,0,c.width,c.height);URL.revokeObjectURL(u);res(c.toDataURL("image/jpeg",.82))};
+  img.onerror=function(){rej({error:"We couldn’t read that image. Please try a JPG or PNG."})};
+  img.src=u})}
+// Entry form
+$("#f").addEventListener("submit",function(ev){
+  ev.preventDefault();
+  var f=ev.target,msg=$("#msg");
+  if(f._gotcha.value)return;
+  if(!f.checkValidity()){msg.style.color="#ff9a9a";msg.textContent="Please fill in every required field and tick the boxes.";return}
+  if(new Date()>END){msg.style.color="#ff9a9a";msg.textContent="Sorry, entries are closed.";return}
+  var btn=f.querySelector("button");btn.disabled=true;msg.style.color="";msg.textContent="Sending…";
+  var b=Object.fromEntries(new FormData(f));["eligible","rights","rules","news"].forEach(function(k){b[k]=!!b[k]});
+  delete b.photofile;
+  prep(f).then(function(p){b.photo=p;if(!p&&!b.link)throw {error:"Please upload a photo or add a link."};return fetch("/api/entries",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(b)})})
+    .then(function(r){return r.json().then(function(j){if(!r.ok)throw j;return j})})
+    .then(function(){msg.style.color="var(--gr)";msg.textContent="You’re in! 🎃 We’ll review your entry and add it to the gallery.";f.reset()})
+    .catch(function(e){msg.style.color="#ff9a9a";msg.textContent=(e&&e.error)||"Something went wrong. Please try again."})
+    .finally(function(){btn.disabled=false});
+});
+
+// Gallery
+var CATS=["All","Best Pet Costume","Best Costume","Best Decoration"],cur="All";
+function esc(s){var d=document.createElement("div");d.textContent=s==null?"":s;return d.innerHTML}
+function safeUrl(u){return /^(https?:\/\/|\/uploads\/)/i.test(u)?u:"#"}
+function voted(c){return MINE[c]?String(MINE[c]):null}
+function render(){
+  $("#tabs").innerHTML=CATS.map(function(c){return '<button class="'+(c===cur?"on":"")+'" data-c="'+c+'">'+c+"</button>"}).join("");
+  var L=ENTRIES.filter(function(e){return cur==="All"||e.cat===cur});
+  $("#list").innerHTML=L.length?L.map(function(e){
+    return '<article class="card entry">'+(e.img?'<img loading="lazy" alt="'+esc(e.title)+'" src="'+esc(safeUrl(e.img))+'">':"")+
+    "<h3>"+esc(e.title)+"</h3><small>by "+esc(e.name)+" · "+esc(e.cat)+'</small><div class="row"><button class="btn" data-v="'+esc(e.id)+'" data-c="'+esc(e.cat)+'">'+(voted(e.cat)===String(e.id)?"Voted ✓":"Vote 🗳️")+" ("+e.votes+")"+'</button>'+(e.link?'<a class="btn ghost" target="_blank" rel="noopener" href="'+esc(safeUrl(e.link))+'">View post</a>':"")+'</div></article>'
+  }).join(""):'<div class="empty" style="grid-column:1/-1">No entries yet. Be the first to enter! 🦇</div>';
+}
+document.addEventListener("click",function(ev){
+  var t=ev.target.closest("button");if(!t)return;
+  if(t.dataset.c&&!t.dataset.v){cur=t.dataset.c;render();return}
+  if(t.dataset.v){
+    if(MINE[t.dataset.c]){toast("You already voted in this category.");return}
+    fetch("/api/vote",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({id:Number(t.dataset.v)})})
+      .then(function(r){return r.json().then(function(j){if(!r.ok)throw j;return j})})
+      .then(function(){toast("Vote counted! 🎃");load()})
+      .catch(function(e){toast((e&&e.error)||"Could not record your vote.");load()});
+  }
+});
+function load(){fetch("/api/entries").then(function(r){return r.json()}).then(function(j){ENTRIES=j.entries.map(function(e){e.title=e.caption||e.cat;return e});MINE=j.mine||{};render()}).catch(render)}
+render();load();
+</script>
+</body>
+</html>
